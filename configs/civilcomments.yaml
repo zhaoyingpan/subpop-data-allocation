@@ -1,0 +1,14 @@
+# CivilComments uses an index into params_list and metadata_list. Replace all
+# three entries together when switching between Acc, Grad, and Bal configurations.
+data:
+  dataset: CivilComments
+  params_dict:
+    acc_0: [0]
+  params_list:
+    - [0.5, 0.5, 0.5]
+  metadata_list:
+    - ./data/civilcomments/subsets_n8/171.csv
+train:
+  model_type: bert
+  num_steps: 301
+  batch_size: 64

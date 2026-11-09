@@ -1,0 +1,13 @@
+# CelebA uses an index into params_list and metadata_list. Replace all three
+# entries together when switching between Acc, Grad, and Bal configurations.
+data:
+  dataset: CelebA
+  params_dict:
+    acc_0: [0]
+  params_list:
+    - [0.5, 0.5, 0.5]
+  metadata_list:
+    - ./data/celeba/subsets_n8/171.csv
+train:
+  model_type: resnet50
+  num_steps: 201

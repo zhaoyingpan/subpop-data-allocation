@@ -1,0 +1,9 @@
+# Replace this example with the Acc, Grad, or Bal configurations to run.
+data:
+  dataset: waterbirds_syn
+  params_dict:
+    acc_0: [0.5, 0.5, 0.5]
+train:
+  model_type: resnet50
+  num_steps: 801
+

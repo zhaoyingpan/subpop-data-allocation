@@ -1,0 +1,19 @@
+name: base
+data:
+  dataset: null
+  data_root: ./data
+  params_dict: null
+train:
+  model_type: resnet50
+  num_steps: null
+  lr: 1e-3
+  weight_decay: 1e-4
+  batch_size: 256
+  seed_list: [0,1,2,3,4]
+  num_gpus: 1
+  num_workers: 4
+  val_freq: 50
+  resume: null
+log:
+  result_root: ./results
+  disable_saving: true

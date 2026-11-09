@@ -1,0 +1,11 @@
+*.pkl
+results/*
+data/
+data
+*tmp/
+*.ipynb
+!theory/*.ipynb
+!results/ca*.pkl
+supplementary/
+
+__pycache__/
